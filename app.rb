@@ -16,6 +16,7 @@ module FormsLab
       binding.pry
       @priate = Priate.new(params)
       @ships = params[:ships]
+      @ships.each {|ship| Ship.new(ship)}
       erb :'pirates/show'
     end
   end
