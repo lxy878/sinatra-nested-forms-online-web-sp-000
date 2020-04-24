@@ -13,10 +13,10 @@ module FormsLab
     end
 
     post '/pirates' do
-      binding.pry
       @priate = Priate.new(params)
       @ships = params[:ships]
       @ships.each {|ship| Ship.new(ship)}
+      binding.pry
       erb :'pirates/show'
     end
   end
