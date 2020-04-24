@@ -9,5 +9,7 @@
 <h2>Display your second ship here</h2>
 <% @ships.each_with_idex do |ship, index|%>
   <h2>Ship <%= index %></h2>
-  <p>name: <%= ship.name%></p>
+  <p>name: <%= ship.name %></p>
+  <p>type: <%= ship.type %></p>
+  <p>booty: <%= ship.booty %></p>
 <% end %>
