@@ -14,7 +14,6 @@ module FormsLab
 
     post '/pirates' do
       @priate = Pirate.new(params)
-      binding.pry
       @ships = params[:pirate][:ships]
       @ships.each {|ship| Ship.new(ship)}
       binding.pry
